@@ -11,5 +11,5 @@ gulp.task('harp', shell.task(['harp compile docs']));
  * 发布到 gh-pages
  */
 gulp.task('deploy', ['harp'], function () {
-    return gulp.src("www/**/*").pipe(deploy());
+    return gulp.src("docs/**/*").pipe(deploy());
 });
