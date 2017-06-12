@@ -1,176 +1,36 @@
 h2.typo-h2 Bootstrap 导航
 
-nav.navbar.navbar-default
-    .container-fluid
-        // Brand and toggle get grouped for better mobile display
-        .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href='#') Brand
-        // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-            ul.nav.navbar-nav
-                li.active
-                    a(href='#')
-                        | Link
-                        span.sr-only (current)
-                li
-                    a(href='#') Link
-                li.dropdown
-                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                        | Dropdown
-                        span.caret
-                    ul.dropdown-menu
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
-                        li
-                            a(href='#') Something else here
-                        li.divider(role='separator')
-                        li
-                            a(href='#') Separated link
-                        li.divider(role='separator')
-                        li
-                            a(href='#') One more separated link
-            form.navbar-form.navbar-left(role='search')
-                .form-group
-                    input.form-control(type='text', placeholder='Search')
-                button.btn.btn-default(type='submit') Submit
-            ul.nav.navbar-nav.navbar-right
-                li
-                    a(href='#') Link
-                li.dropdown
-                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                        | Dropdown
-                        span.caret
-                    ul.dropdown-menu
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
-                        li
-                            a(href='#') Something else here
-                        li.divider(role='separator')
-                        li
-                            a(href='#') Separated link
-        // /.navbar-collapse
-    // /.container-fluid
-
-
-h2.typo-h2 Bootstrap 下拉动画导航
-
-
-
-nav.navbar.navbar-theme(role='navigation')
-    .container-fluid
-        // Brand and toggle get grouped for better mobile display
-        .navbar-header
-            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-animations', aria-expanded='false')
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href='index.html') 品牌 Logo
-        // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-animations.navbar-collapse.collapse(data-hover='dropdown', data-animations='fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew', aria-expanded='false', style='height: 1px;')
-            ul.nav.navbar-nav
-                li.dropdown
-                    a.dropdown-toggle(href='http://www.baidu.com',)
-                        | 首页
-                        span.caret
-                    ul.dropdown-menu(role='menu')
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
-                        li
-                            a(href='#') Another action
-                        li
-                            a(href='#') Something else here
-                        li
-                            a(href='#') Separated link
-                        li
-                            a(href='#') One more separated link
-                li.dropdown
-                    a.dropdown-toggle(href='http://www.baidu.com',)
-                        | 关于我们
-                        span.caret
-                    ul.dropdown-menu.dropdownhover-bottom(role='menu')
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
-                        li.dropdown
-                            a.dropdown-toggle(href='http://www.baidu.com',)
-                                | 二级导航
-                                span.caret
-                            ul.dropdown-menu
-                                li
-                                    a(href='#') 三级导航
-                                li
-                                    a(href='#') 三级导航 1
-                                li
-                                    a(href='#') 三级导航 2
-                                li
-                                    a(href='#') Separated link
-                                li
-                                    a(href='#') One more separated link
-                        li.dropdown
-                            a.dropdown-toggle(href='http://www.baidu.com',)
-                                | 新闻动态
-                                span.caret
-                            ul.dropdown-menu
-                                li
-                                    a(href='#') Action
-                                li
-                                    a(href='#') Another action
-                                li
-                                    a(href='#') Another action
-                                li.dropdown
-                                    a(href='#')
-                                        | Another dropdown
-                                        span.caret
-                                    ul.dropdown-menu
-                                        li
-                                            a(href='#') Action
-                                        li
-                                            a(href='#') Another action
-                                        li
-                                            a(href='#') Something else here
-                                        li
-                                            a(href='#') Separated link
-                                        li
-                                            a(href='#') One more separated link
-                                li
-                                    a(href='#') Something else here
-                                li
-                                    a(href='#') Separated link
-                                li
-                                    a(href='#') One more separated link
-                        li
-                            a(href='#') Something else here
-                        li
-                            a(href='#') Separated link
-                        li
-                            a(href='#') One more separated link
-                li.dropdown
-                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                        | Dropdown 2
-                        span.caret
-                    ul.dropdown-menu.dropdownhover-bottom(role='menu')
-                        li
-                            a(href='#') Action
-                        li
-                            a(href='#') Another action
-                        li
-                            a(href='#') Something else here
-                        li
-                            a(href='#') Separated link
-                        li
-                            a(href='#') One more separated link
-        // /.navbar-collapse
-    // /.container-fluid
+header#header.site-header
+  nav.navbar.navbar-default.white.bootsnav.on.no-full.navbar-fixed.no-background
+    .container
+      .search_btn.btn_common
+        i.icon-icons185
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-menu')
+          i.fa.fa-bars
+        a.navbar-brand(href='http://mblock.dev/zh-home')
+          img.logo.logo-display(src='http://mblock.dev/zh-home/wp-content/uploads/sites/2/2017/06/LOGO-bai-2x.png', alt='logo')
+          img.logo.logo-scrolled(src='http://mblock.dev/zh-home/wp-content/uploads/sites/2/2017/06/LOGO-hei-2x.png', alt='')
+      #navbar-menu.collapse.navbar-collapse
+        ul#menu-main.nav.navbar-nav.navbar-left
+          li#menu-item-208.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item.page-item-85.current_page_item.menu-item-208.active
+            a(title='首页', href='http://mblock.dev/zh-home/') 首页
+          li#menu-item-220.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-220
+            a(title='创造', href='http://editor.makeblock.com/ide.html') 关于我们
+          li#menu-item-217.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-217.dropdown
+            a.dropdown-toggle(title='教育者', href='#', data-toggle='dropdown', aria-haspopup='true') 产品
+            ul.dropdown-menu.animated(role='menu')
+              li#menu-item-381.menu-item.menu-item-type-post_type_archive.menu-item-object-case.menu-item-381
+                a(title='案例', href='http://mblock.dev/zh-home/case/') 案例
+              li#menu-item-210.menu-item.menu-item-type-post_type_archive.menu-item-object-edu.menu-item-210
+                a(title='教育资源', href='http://mblock.dev/zh-home/edu/') 服务项目
+              li#menu-item-228.menu-item.menu-item-type-taxonomy.menu-item-object-materialcat.menu-item-228
+                a(title='素材中心', href='http://mblock.dev/zh-home/materialcat/image/') 案例中心
+          li#menu-item-359.menu-item.menu-item-type-post_type_archive.menu-item-object-faq.menu-item-359
+            a(title='帮助与支持', href='http://mblock.dev/zh-home/faq/') 帮助与支持
+        ul#menu-lang.nav.navbar-nav.navbar-right
+          li#menu-item-424.blog-id-2.mlp-language-nav-item.menu-item.menu-item-type-language.menu-item-object-mlp_language.menu-item-has-children.mlp-current-language-item.menu-item-424.dropdown
+            a.dropdown-toggle(title='中文', rel='alternate', href='#', data-toggle='dropdown', aria-haspopup='true') 中文
+            ul.dropdown-menu.animated(role='menu')
+              li#menu-item-425.blog-id-1.mlp-language-nav-item.menu-item.menu-item-type-language.menu-item-object-mlp_language.menu-item-425
+                a(title='English', rel='alternate', href='http://mblock.dev/?noredirect=en_US') English
